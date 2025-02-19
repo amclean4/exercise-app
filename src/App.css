@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8; 
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  display: block; /* Makes each button take the full width */
+  width: 100%; /* Ensures buttons take the full width of the container */
+  margin: 10px 0; /* Adds vertical space between buttons */
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.counter {
+  font-size: 48px; /* Increase the size of the numbers */
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+}
+
+.timer {
+  font-size: 48px; /* Increase size of the timer */
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 32px;
+  color: black; /* Force the title color to black */
+}
+
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
