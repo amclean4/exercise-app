@@ -28,9 +28,9 @@ body {
 }
 
 button {
-  display: block; /* Makes each button take the full width */
-  width: 100%; /* Ensures buttons take the full width of the container */
-  margin: 10px 0; /* Adds vertical space between buttons */
+  display: block; 
+  width: 100%; 
+  margin: 10px 0; 
   padding: 12px;
   border: none;
   border-radius: 10px;
@@ -40,7 +40,7 @@ button {
 }
 
 .counter {
-  font-size: 48px; /* Increase the size of the numbers */
+  font-size: 48px; 
   font-weight: bold;
   text-align: center;
   display: block;
@@ -48,7 +48,7 @@ button {
 }
 
 .timer {
-  font-size: 48px; /* Increase size of the timer */
+  font-size: 60px; 
   font-weight: bold;
   text-align: center;
   display: block;
@@ -61,7 +61,7 @@ button:hover {
 
 h1 {
   font-size: 32px;
-  color: black; /* Force the title color to black */
+  color: black; 
 }
 
 

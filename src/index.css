@@ -14,7 +14,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 600;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -41,7 +41,7 @@ body {
 
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4.2em;
   line-height: 1.1;
   color: black;
 }
@@ -56,9 +56,9 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-    display: block; /* Makes each button take the full width */
-    width: 100%; /* Ensures buttons take the full width of the container */
-    margin: 10px 0; /* Adds vertical space between buttons */
+    display: block; 
+    width: 100%; 
+    margin: 10px 0; 
     padding: 12px;
     border: black 2pt solid;
     border-radius: 10px;
