@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export default function DurationExercise({ name, onGoHome }) {
+export default function DurationExercise({ name, suggested, onGoHome, onGoToExercise }) {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
     let timer;
     if (isRunning) {
-      timer = setInterval(() => setTime(prev => prev + 1), 1000);
+      timer = setInterval(() => setTime((prev) => prev + 1), 1000);
     } else {
       clearInterval(timer);
     }
@@ -21,13 +21,21 @@ export default function DurationExercise({ name, onGoHome }) {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>{name}</h1>
-      <p>{formatTime()}</p>
-      <button onClick={() => setIsRunning(true)}>start</button>
-      <button onClick={() => setIsRunning(false)}>stop</button>
-      <button onClick={() => { setIsRunning(false); setTime(0); }}>reset</button>
-      <button onClick={onGoHome}>home</button>
+      <p className="timer">{formatTime()}</p>
+      <button onClick={() => setIsRunning(true)}>Start</button>
+      <button onClick={() => setIsRunning(false)}>Stop</button>
+      <button
+        onClick={() => {
+          setIsRunning(false);
+          setTime(0);
+        }}
+      >
+        Reset
+      </button>
+      <button onClick={onGoHome}>Home</button>
+      <button onClick={() => onGoToExercise(suggested)}>Suggested: {suggested}</button>
     </div>
   );
 }
